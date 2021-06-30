@@ -35,6 +35,11 @@ jobs:
       - run:
           name: "Build Application according to some given configuration"
           command: dotnet.exe build --configuration Release
+          
+      - run:
+          name: "Run Application In Some Environment"
+          command: dotnet.exe run
+
 workflows:
   test_and_build:
     jobs:
